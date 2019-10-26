@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DnsTool
 {
-    public partial class Form1 : Form
+    public partial class DnsToolWindow : Form
     {
-        public Form1()
+        public DnsToolWindow()
         {
             InitializeComponent();
         }
