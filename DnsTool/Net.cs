@@ -25,10 +25,6 @@ namespace DnsTool
                     string ToReturn = $"IP:{aRecord.Address} Type: {aRecord.RecordType} DomainName: {aRecord.DomainName}";
                     return ToReturn;
                 }
-                else 
-                {
-                    return "No record found.";
-                }
             }
             return "No record found.";
         } 
@@ -40,10 +36,6 @@ namespace DnsTool
                 {
                     string ToReturn = $"IP:{aRecord.Address} Type: {aRecord.RecordType} DomainName: {aRecord.DomainName}";
                     return ToReturn;
-                }
-                else
-                {
-                    return "No record found.";
                 }
             }
             return "No record found.";
