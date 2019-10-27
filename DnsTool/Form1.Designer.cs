@@ -41,9 +41,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.PingUpDown = new System.Windows.Forms.NumericUpDown();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PingUpDown)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // OutputWindow
@@ -61,11 +63,8 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkRed;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.IPVSixBox);
-            this.panel1.Controls.Add(this.IPVFourBox);
-            this.panel1.Controls.Add(this.WhoisBox);
-            this.panel1.Controls.Add(this.ClearButton);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.UrlTextBox);
             this.panel1.Controls.Add(this.LookUpButton);
@@ -121,9 +120,9 @@
             this.ClearButton.FlatAppearance.BorderSize = 2;
             this.ClearButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ClearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ClearButton.Location = new System.Drawing.Point(19, 56);
+            this.ClearButton.Location = new System.Drawing.Point(6, 3);
             this.ClearButton.Name = "ClearButton";
-            this.ClearButton.Size = new System.Drawing.Size(124, 28);
+            this.ClearButton.Size = new System.Drawing.Size(78, 28);
             this.ClearButton.TabIndex = 5;
             this.ClearButton.Text = "Clear";
             this.ClearButton.UseVisualStyleBackColor = false;
@@ -133,7 +132,7 @@
             // 
             this.WhoisBox.AutoSize = true;
             this.WhoisBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WhoisBox.Location = new System.Drawing.Point(19, 90);
+            this.WhoisBox.Location = new System.Drawing.Point(6, 37);
             this.WhoisBox.Name = "WhoisBox";
             this.WhoisBox.Size = new System.Drawing.Size(68, 17);
             this.WhoisBox.TabIndex = 6;
@@ -144,7 +143,7 @@
             // 
             this.IPVFourBox.AutoSize = true;
             this.IPVFourBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IPVFourBox.Location = new System.Drawing.Point(90, 90);
+            this.IPVFourBox.Location = new System.Drawing.Point(6, 83);
             this.IPVFourBox.Name = "IPVFourBox";
             this.IPVFourBox.Size = new System.Drawing.Size(53, 17);
             this.IPVFourBox.TabIndex = 7;
@@ -155,7 +154,7 @@
             // 
             this.IPVSixBox.AutoSize = true;
             this.IPVSixBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IPVSixBox.Location = new System.Drawing.Point(90, 113);
+            this.IPVSixBox.Location = new System.Drawing.Point(6, 60);
             this.IPVSixBox.Name = "IPVSixBox";
             this.IPVSixBox.Size = new System.Drawing.Size(53, 17);
             this.IPVSixBox.TabIndex = 8;
@@ -190,10 +189,11 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Brown;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.PingUpDown);
             this.panel2.Controls.Add(this.PingButton);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(7, 343);
+            this.panel2.Location = new System.Drawing.Point(15, 224);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(88, 67);
             this.panel2.TabIndex = 12;
@@ -223,6 +223,19 @@
             0,
             0});
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Brown;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel3.Controls.Add(this.ClearButton);
+            this.panel3.Controls.Add(this.WhoisBox);
+            this.panel3.Controls.Add(this.IPVSixBox);
+            this.panel3.Controls.Add(this.IPVFourBox);
+            this.panel3.Location = new System.Drawing.Point(15, 56);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(128, 162);
+            this.panel3.TabIndex = 13;
+            // 
             // DnsToolWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -237,6 +250,8 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PingUpDown)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -256,6 +271,7 @@
         private System.Windows.Forms.Button PingButton;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.NumericUpDown PingUpDown;
+        private System.Windows.Forms.Panel panel3;
     }
 }
 

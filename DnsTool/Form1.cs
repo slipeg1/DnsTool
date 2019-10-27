@@ -24,7 +24,7 @@ namespace DnsTool
         public void Out(string MyString)
         {
             Str1.Clear();
-            Str1.Append("\n"+DateTime.Now+"\n");
+            Str1.Append("\n["+DateTime.Now+"]\n");
             Str1.Append(MyString);
             OutputWindow.Text += Str1 + "\n";
         }
