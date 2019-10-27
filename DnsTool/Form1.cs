@@ -24,19 +24,39 @@ namespace DnsTool
         public void Out(string MyString)
         {
             Str1.Clear();
+            Str1.Append("\n"+DateTime.Now+"\n");
             Str1.Append(MyString);
             OutputWindow.Text += Str1 + "\n";
         }
 
         private void LookUpButton_MouseClick(object sender, MouseEventArgs e)
         {
-            //Purely for testing purpose
-            Out(nt.GetA(UrlTextBox.Text));
-            Out(nt.GetAAAA(UrlTextBox.Text));
+            if (IPVFourBox.Checked) 
+            {
+                Out(nt.GetA(UrlTextBox.Text));
+            }
+            if (IPVSixBox.Checked) 
+            {
+                Out(nt.GetAAAA(UrlTextBox.Text));
+            }
+            if (WhoisBox.Checked) 
+            {
+                Out(nt.PerformWhois(UrlTextBox.Text));
+            }
         }
         private void test()
         {
           
+        }
+
+        private void ClearButton_Click(object sender, EventArgs e)
+        {
+            OutputWindow.Text = "";
+        }
+
+        private void PingButton_Click(object sender, EventArgs e)
+        {
+            Out(nt.PerformPing(UrlTextBox.Text, PingUpDown.Value.ToString()));
         }
     }
 }
