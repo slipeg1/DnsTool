@@ -70,9 +70,9 @@
             this.UrlTextBox.BackColor = System.Drawing.Color.Black;
             this.UrlTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
             this.UrlTextBox.ForeColor = System.Drawing.SystemColors.Info;
-            this.UrlTextBox.Location = new System.Drawing.Point(149, 17);
+            this.UrlTextBox.Location = new System.Drawing.Point(156, 17);
             this.UrlTextBox.Name = "UrlTextBox";
-            this.UrlTextBox.Size = new System.Drawing.Size(254, 26);
+            this.UrlTextBox.Size = new System.Drawing.Size(247, 26);
             this.UrlTextBox.TabIndex = 3;
             // 
             // label1
