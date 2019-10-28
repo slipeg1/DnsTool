@@ -24,7 +24,7 @@ namespace DnsTool
         public void Out(string MyString)
         {
             Str1.Clear();
-            Str1.Append("\n["+DateTime.Now+"]\n");
+            Str1.Append("["+DateTime.Now+"]\n");
             Str1.Append(MyString);
             OutputWindow.Text += Str1 + "\n";
         }
@@ -57,6 +57,11 @@ namespace DnsTool
         private void PingButton_Click(object sender, EventArgs e)
         {
             Out(nt.PerformPing(UrlTextBox.Text, PingUpDown.Value.ToString()));
+        }
+
+        private void OutputWindow_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
