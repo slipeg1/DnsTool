@@ -15,6 +15,24 @@ namespace DnsTool
         private LookupClient Client;
         private StringBuilder Str1 = new StringBuilder("");
         private Net nt = new Net();
+
+
+        //Not my code
+        private const int WM_NCHITTEST = 0x84;
+        private const int HTCLIENT = 0x1;
+        private const int HTCAPTION = 0x2;
+        ///
+        /// Handling the window messages
+        ///
+        protected override void WndProc(ref Message message)
+        {
+            base.WndProc(ref message);
+
+            if (message.Msg == WM_NCHITTEST && (int)message.Result == HTCLIENT)
+                message.Result = (IntPtr)HTCAPTION;
+        }
+        //////////////////////////////////////////////////////////////////////
+
         public DnsToolWindow()
         {
             InitializeComponent();
@@ -62,6 +80,16 @@ namespace DnsTool
         private void OutputWindow_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

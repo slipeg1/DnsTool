@@ -43,6 +43,9 @@
             this.OutputWindow = new System.Windows.Forms.RichTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PingUpDown)).BeginInit();
             this.panel3.SuspendLayout();
@@ -219,7 +222,7 @@
             this.OutputWindow.Location = new System.Drawing.Point(15, 12);
             this.OutputWindow.Name = "OutputWindow";
             this.OutputWindow.ReadOnly = true;
-            this.OutputWindow.Size = new System.Drawing.Size(370, 311);
+            this.OutputWindow.Size = new System.Drawing.Size(389, 336);
             this.OutputWindow.TabIndex = 1;
             this.OutputWindow.Text = "";
             // 
@@ -234,9 +237,9 @@
             this.panel1.Controls.Add(this.UrlTextBox);
             this.panel1.Controls.Add(this.LookUpButton);
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Location = new System.Drawing.Point(12, 44);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(579, 422);
+            this.panel1.Size = new System.Drawing.Size(601, 439);
             this.panel1.TabIndex = 2;
             // 
             // panel4
@@ -246,16 +249,62 @@
             this.panel4.Controls.Add(this.OutputWindow);
             this.panel4.Location = new System.Drawing.Point(156, 54);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(403, 339);
+            this.panel4.Size = new System.Drawing.Size(425, 366);
             this.panel4.TabIndex = 14;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Firebrick;
+            this.button1.FlatAppearance.BorderSize = 2;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Bold);
+            this.button1.Location = new System.Drawing.Point(574, 8);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(39, 30);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Red;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Firebrick;
+            this.button2.FlatAppearance.BorderSize = 2;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(529, 8);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(39, 30);
+            this.button2.TabIndex = 16;
+            this.button2.Text = "___";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Verdana", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(62, 11);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(299, 25);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "DNS Tool. Made by Slipeg";
             // 
             // DnsToolWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(603, 446);
+            this.ClientSize = new System.Drawing.Size(625, 495);
+            this.ControlBox = false;
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DnsToolWindow";
             this.Text = "DnsTool";
             this.panel2.ResumeLayout(false);
@@ -267,6 +316,7 @@
             this.panel1.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -287,6 +337,9 @@
         private System.Windows.Forms.RichTextBox OutputWindow;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label3;
     }
 }
 
