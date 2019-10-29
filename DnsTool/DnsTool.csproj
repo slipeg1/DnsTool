@@ -112,5 +112,20 @@
   <ItemGroup>
     <None Include="Images\Background2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XButtonDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MinimizeDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DNSLookup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LookUpButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LookUpButtonDown.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

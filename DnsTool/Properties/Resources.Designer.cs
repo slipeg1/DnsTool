@@ -113,6 +113,36 @@ namespace DnsTool.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LookUpButton {
+            get {
+                object obj = ResourceManager.GetObject("LookUpButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LookUpButtonDown {
+            get {
+                object obj = ResourceManager.GetObject("LookUpButtonDown", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MinimizeDown {
+            get {
+                object obj = ResourceManager.GetObject("MinimizeDown", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MiniMizeLayer1 {
             get {
                 object obj = ResourceManager.GetObject("MiniMizeLayer1", resourceCulture);
@@ -136,6 +166,16 @@ namespace DnsTool.Properties {
         internal static System.Drawing.Bitmap XButton {
             get {
                 object obj = ResourceManager.GetObject("XButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap XButtonDown {
+            get {
+                object obj = ResourceManager.GetObject("XButtonDown", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

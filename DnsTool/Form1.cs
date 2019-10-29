@@ -95,5 +95,40 @@ namespace DnsTool
         {
 
         }
+
+        private void button1_MouseDown(object sender, MouseEventArgs e)
+        {
+            button1.Image = Properties.Resources.XButtonDown;
+        }
+
+        private void button1_MouseLeave(object sender, EventArgs e)
+        {
+            button1.Image = Properties.Resources.XButton;
+        }
+
+        private void button2_MouseDown(object sender, MouseEventArgs e)
+        {
+            button2.Image = Properties.Resources.MinimizeDown;
+        }
+
+        private void button2_MouseLeave(object sender, EventArgs e)
+        {
+            button2.Image = Properties.Resources.MiniMizeLayer1;
+        }
+
+        private void LookUpButton_MouseDown(object sender, MouseEventArgs e)
+        {
+            LookUpButton.Image = Properties.Resources.LookUpButtonDown;
+        }
+
+        private void LookUpButton_MouseLeave(object sender, EventArgs e)
+        {
+            LookUpButton.Image = Properties.Resources.LookUpButton;
+        }
+
+        private void LookUpButton_MouseUp(object sender, MouseEventArgs e)
+        {
+            LookUpButton.Image = Properties.Resources.LookUpButton;
+        }
     }
 }

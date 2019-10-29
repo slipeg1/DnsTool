@@ -68,6 +68,8 @@
             this.button2.Text = "___";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button2_MouseDown);
+            this.button2.MouseLeave += new System.EventHandler(this.button2_MouseLeave);
             // 
             // button1
             // 
@@ -81,9 +83,10 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(39, 30);
             this.button1.TabIndex = 15;
-            this.button1.Text = "X";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button1_MouseDown);
+            this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
             // 
             // panel1
             // 
@@ -113,10 +116,11 @@
             // 
             // OutputWindow
             // 
-            this.OutputWindow.BackColor = System.Drawing.SystemColors.InfoText;
+            this.OutputWindow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(20)))));
             this.OutputWindow.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.OutputWindow.ForeColor = System.Drawing.SystemColors.Info;
             this.OutputWindow.Location = new System.Drawing.Point(15, 12);
+            this.OutputWindow.Margin = new System.Windows.Forms.Padding(0);
             this.OutputWindow.Name = "OutputWindow";
             this.OutputWindow.ReadOnly = true;
             this.OutputWindow.Size = new System.Drawing.Size(389, 336);
@@ -272,17 +276,20 @@
             // LookUpButton
             // 
             this.LookUpButton.BackColor = System.Drawing.Color.Red;
+            this.LookUpButton.BackgroundImage = global::DnsTool.Properties.Resources.LookUpButton;
             this.LookUpButton.FlatAppearance.BorderColor = System.Drawing.Color.Firebrick;
-            this.LookUpButton.FlatAppearance.BorderSize = 2;
+            this.LookUpButton.FlatAppearance.BorderSize = 0;
             this.LookUpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LookUpButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LookUpButton.Location = new System.Drawing.Point(409, 17);
             this.LookUpButton.Name = "LookUpButton";
             this.LookUpButton.Size = new System.Drawing.Size(172, 28);
             this.LookUpButton.TabIndex = 2;
-            this.LookUpButton.Text = "DNS Lookup";
             this.LookUpButton.UseVisualStyleBackColor = false;
             this.LookUpButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.LookUpButton_MouseClick);
+            this.LookUpButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.LookUpButton_MouseDown);
+            this.LookUpButton.MouseLeave += new System.EventHandler(this.LookUpButton_MouseLeave);
+            this.LookUpButton.MouseUp += new System.Windows.Forms.MouseEventHandler(this.LookUpButton_MouseUp);
             // 
             // DnsToolWindow
             // 
