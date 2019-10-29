@@ -80,10 +80,6 @@ namespace DnsTool
             Out(nt.PerformPing(UrlTextBox.Text, PingUpDown.Value.ToString()));
         }
 
-        private void OutputWindow_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {

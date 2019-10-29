@@ -106,5 +106,11 @@
   <ItemGroup>
     <None Include="Images\ki8.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\FormBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Background2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
