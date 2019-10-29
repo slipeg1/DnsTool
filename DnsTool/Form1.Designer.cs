@@ -310,6 +310,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DnsToolWindow";
             this.Text = "DnsTool";
+            this.Load += new System.EventHandler(this.DnsToolWindow_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel4.ResumeLayout(false);

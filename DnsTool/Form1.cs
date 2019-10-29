@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DnsClient;
@@ -74,6 +75,8 @@ namespace DnsTool
 
         private void PingButton_Click(object sender, EventArgs e)
         {
+            Out($"Please wait for {UrlTextBox.Text} to respond...");
+            OutputWindow.Refresh();
             Out(nt.PerformPing(UrlTextBox.Text, PingUpDown.Value.ToString()));
         }
 
@@ -90,6 +93,11 @@ namespace DnsTool
         private void button2_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void DnsToolWindow_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
