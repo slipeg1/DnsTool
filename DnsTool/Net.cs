@@ -24,7 +24,7 @@ namespace DnsTool
             {
                 if (aRecord != null)
                 {
-                    string ToReturn = $"IP:{aRecord.Address} Type: {aRecord.RecordType} DomainName: {aRecord.DomainName}";
+                    string ToReturn = $"IP:{aRecord.Address}  [{aRecord.RecordType}]  DNS: {aRecord.DomainName}";
                     return ToReturn;
                 }
             }
@@ -37,7 +37,7 @@ namespace DnsTool
             {
                 if (AaaaRecord != null)
                 {
-                    string ToReturn = $"IP:{AaaaRecord.Address} Type: {AaaaRecord.RecordType} DomainName: {AaaaRecord.DomainName}";
+                    string ToReturn = $"IP:{AaaaRecord.Address}  [{AaaaRecord.RecordType}]  DNS: {AaaaRecord.DomainName}";
                     return ToReturn;
                 }
             }

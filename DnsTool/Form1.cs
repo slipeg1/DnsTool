@@ -1,22 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
 using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using DnsClient;
-using DnsClient.Protocol;
+
 
 namespace DnsTool
 {
+  /*I would love to give the software more funcions.
+   * But I don't know any dns that let me display all this informations.
+   * I have no way of testing to know if anything work appart for ipv4/ipv6, whois, ping.
+   */
     public partial class DnsToolWindow : Form
     {
         private LookupClient Client;
         private StringBuilder Str1 = new StringBuilder("");
         private Net nt = new Net();
-
 
         //Not my code
         private const int WM_NCHITTEST = 0x84;
@@ -43,13 +41,15 @@ namespace DnsTool
         public void Out(string MyString)
         {
             Str1.Clear();
-            Str1.Append("["+DateTime.Now+"]\n");
+            Str1.Append("---["+DateTime.Now+"]---\n");
             Str1.Append(MyString);
             OutputWindow.Text += Str1 + "\n";
         }
 
         private void LookUpButton_MouseClick(object sender, MouseEventArgs e)
         {
+
+            
             if (IPVFourBox.Checked) 
             {
                 Out(nt.GetA(UrlTextBox.Text));
@@ -96,6 +96,8 @@ namespace DnsTool
             button1.Image = Properties.Resources.XButton;
             button2.Image = Properties.Resources.MiniMizeLayer1;
             LookUpButton.Image = Properties.Resources.LookUpButton;
+            PingButton.Image = Properties.Resources.PingButton;
+            ClearButton.Image = Properties.Resources.ClearButton;
         }
 
         private void button1_MouseDown(object sender, MouseEventArgs e)
@@ -131,6 +133,36 @@ namespace DnsTool
         private void LookUpButton_MouseUp(object sender, MouseEventArgs e)
         {
             LookUpButton.Image = Properties.Resources.LookUpButton;
+        }
+
+        private void PingButton_MouseDown(object sender, MouseEventArgs e)
+        {
+            PingButton.Image = Properties.Resources.PingButtonDown;
+        }
+
+        private void PingButton_MouseLeave(object sender, EventArgs e)
+        {
+            PingButton.Image = Properties.Resources.PingButton;
+        }
+
+        private void PingButton_MouseUp(object sender, MouseEventArgs e)
+        {
+            PingButton.Image = Properties.Resources.PingButton;
+        }
+
+        private void ClearButton_MouseDown(object sender, MouseEventArgs e)
+        {
+            ClearButton.Image = Properties.Resources.ClearButtonDown;
+        }
+
+        private void ClearButton_MouseLeave(object sender, EventArgs e)
+        {
+            ClearButton.Image = Properties.Resources.ClearButton;
+        }
+
+        private void ClearButton_MouseUp(object sender, MouseEventArgs e)
+        {
+            ClearButton.Image = Properties.Resources.ClearButton;
         }
     }
 }

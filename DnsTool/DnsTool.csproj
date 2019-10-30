@@ -130,5 +130,17 @@
   <ItemGroup>
     <None Include="Resources\panel1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PingButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PingButtonDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClearButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClearButtonDown.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

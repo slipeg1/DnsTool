@@ -145,18 +145,21 @@
             // ClearButton
             // 
             this.ClearButton.BackColor = System.Drawing.Color.Red;
+            this.ClearButton.BackgroundImage = global::DnsTool.Properties.Resources.ClearButton;
             this.ClearButton.Cursor = System.Windows.Forms.Cursors.Default;
             this.ClearButton.FlatAppearance.BorderColor = System.Drawing.Color.Firebrick;
-            this.ClearButton.FlatAppearance.BorderSize = 2;
+            this.ClearButton.FlatAppearance.BorderSize = 0;
             this.ClearButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ClearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ClearButton.Location = new System.Drawing.Point(25, 25);
             this.ClearButton.Name = "ClearButton";
             this.ClearButton.Size = new System.Drawing.Size(78, 28);
             this.ClearButton.TabIndex = 5;
-            this.ClearButton.Text = "Clear";
             this.ClearButton.UseVisualStyleBackColor = false;
             this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
+            this.ClearButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ClearButton_MouseDown);
+            this.ClearButton.MouseLeave += new System.EventHandler(this.ClearButton_MouseLeave);
+            this.ClearButton.MouseUp += new System.Windows.Forms.MouseEventHandler(this.ClearButton_MouseUp);
             // 
             // WhoisBox
             // 
@@ -237,17 +240,20 @@
             // PingButton
             // 
             this.PingButton.BackColor = System.Drawing.Color.Red;
+            this.PingButton.BackgroundImage = global::DnsTool.Properties.Resources.PingButton;
             this.PingButton.FlatAppearance.BorderColor = System.Drawing.Color.Firebrick;
-            this.PingButton.FlatAppearance.BorderSize = 2;
+            this.PingButton.FlatAppearance.BorderSize = 0;
             this.PingButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PingButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PingButton.Location = new System.Drawing.Point(5, 4);
             this.PingButton.Name = "PingButton";
             this.PingButton.Size = new System.Drawing.Size(76, 28);
             this.PingButton.TabIndex = 9;
-            this.PingButton.Text = "PING";
             this.PingButton.UseVisualStyleBackColor = false;
             this.PingButton.Click += new System.EventHandler(this.PingButton_Click);
+            this.PingButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PingButton_MouseDown);
+            this.PingButton.MouseLeave += new System.EventHandler(this.PingButton_MouseLeave);
+            this.PingButton.MouseUp += new System.Windows.Forms.MouseEventHandler(this.PingButton_MouseUp);
             // 
             // label2
             // 

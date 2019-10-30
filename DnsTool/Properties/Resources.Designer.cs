@@ -73,6 +73,26 @@ namespace DnsTool.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ClearButton {
+            get {
+                object obj = ResourceManager.GetObject("ClearButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ClearButtonDown {
+            get {
+                object obj = ResourceManager.GetObject("ClearButtonDown", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap FormBack {
             get {
                 object obj = ResourceManager.GetObject("FormBack", resourceCulture);
@@ -156,6 +176,26 @@ namespace DnsTool.Properties {
         internal static System.Drawing.Bitmap panel1 {
             get {
                 object obj = ResourceManager.GetObject("panel1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PingButton {
+            get {
+                object obj = ResourceManager.GetObject("PingButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PingButtonDown {
+            get {
+                object obj = ResourceManager.GetObject("PingButtonDown", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
