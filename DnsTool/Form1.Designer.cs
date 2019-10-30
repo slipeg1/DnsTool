@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DnsToolWindow));
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -126,11 +127,12 @@
             this.OutputWindow.Size = new System.Drawing.Size(389, 336);
             this.OutputWindow.TabIndex = 1;
             this.OutputWindow.Text = "";
+            this.OutputWindow.WordWrap = false;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Brown;
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
             this.panel3.Controls.Add(this.ClearButton);
             this.panel3.Controls.Add(this.WhoisBox);
             this.panel3.Controls.Add(this.IPVSixBox);
@@ -143,11 +145,12 @@
             // ClearButton
             // 
             this.ClearButton.BackColor = System.Drawing.Color.Red;
+            this.ClearButton.Cursor = System.Windows.Forms.Cursors.Default;
             this.ClearButton.FlatAppearance.BorderColor = System.Drawing.Color.Firebrick;
             this.ClearButton.FlatAppearance.BorderSize = 2;
             this.ClearButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ClearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ClearButton.Location = new System.Drawing.Point(6, 3);
+            this.ClearButton.Location = new System.Drawing.Point(25, 25);
             this.ClearButton.Name = "ClearButton";
             this.ClearButton.Size = new System.Drawing.Size(78, 28);
             this.ClearButton.TabIndex = 5;
@@ -158,35 +161,41 @@
             // WhoisBox
             // 
             this.WhoisBox.AutoSize = true;
+            this.WhoisBox.BackColor = System.Drawing.Color.Transparent;
+            this.WhoisBox.Cursor = System.Windows.Forms.Cursors.Default;
             this.WhoisBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WhoisBox.Location = new System.Drawing.Point(6, 37);
+            this.WhoisBox.Location = new System.Drawing.Point(25, 58);
             this.WhoisBox.Name = "WhoisBox";
             this.WhoisBox.Size = new System.Drawing.Size(68, 17);
             this.WhoisBox.TabIndex = 6;
             this.WhoisBox.Text = "WHOIS";
-            this.WhoisBox.UseVisualStyleBackColor = true;
+            this.WhoisBox.UseVisualStyleBackColor = false;
             // 
             // IPVSixBox
             // 
             this.IPVSixBox.AutoSize = true;
+            this.IPVSixBox.BackColor = System.Drawing.Color.Transparent;
+            this.IPVSixBox.Cursor = System.Windows.Forms.Cursors.Default;
             this.IPVSixBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IPVSixBox.Location = new System.Drawing.Point(6, 60);
+            this.IPVSixBox.Location = new System.Drawing.Point(25, 81);
             this.IPVSixBox.Name = "IPVSixBox";
             this.IPVSixBox.Size = new System.Drawing.Size(53, 17);
             this.IPVSixBox.TabIndex = 8;
             this.IPVSixBox.Text = "IPV6";
-            this.IPVSixBox.UseVisualStyleBackColor = true;
+            this.IPVSixBox.UseVisualStyleBackColor = false;
             // 
             // IPVFourBox
             // 
             this.IPVFourBox.AutoSize = true;
+            this.IPVFourBox.BackColor = System.Drawing.Color.Transparent;
+            this.IPVFourBox.Cursor = System.Windows.Forms.Cursors.Default;
             this.IPVFourBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IPVFourBox.Location = new System.Drawing.Point(6, 83);
+            this.IPVFourBox.Location = new System.Drawing.Point(25, 104);
             this.IPVFourBox.Name = "IPVFourBox";
             this.IPVFourBox.Size = new System.Drawing.Size(53, 17);
             this.IPVFourBox.TabIndex = 7;
             this.IPVFourBox.Text = "IPV4";
-            this.IPVFourBox.UseVisualStyleBackColor = true;
+            this.IPVFourBox.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 

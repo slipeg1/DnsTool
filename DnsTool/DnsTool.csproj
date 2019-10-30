@@ -127,5 +127,8 @@
   <ItemGroup>
     <None Include="Resources\LookUpButtonDown.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panel1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

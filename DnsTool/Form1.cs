@@ -93,7 +93,9 @@ namespace DnsTool
 
         private void DnsToolWindow_Load(object sender, EventArgs e)
         {
-
+            button1.Image = Properties.Resources.XButton;
+            button2.Image = Properties.Resources.MiniMizeLayer1;
+            LookUpButton.Image = Properties.Resources.LookUpButton;
         }
 
         private void button1_MouseDown(object sender, MouseEventArgs e)
